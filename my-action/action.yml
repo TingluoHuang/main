@@ -1,0 +1,10 @@
+name: "My action"
+description: "A bug report action"
+author: "Max Schoening <max@github.com>"
+inputs:
+  beep:
+    description: "A type of sound"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args: ["--beep", "${{ inputs.beep }}"]
