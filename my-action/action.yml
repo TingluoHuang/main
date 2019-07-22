@@ -6,5 +6,5 @@ inputs:
     description: "A type of sound"
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "ubuntu:16.04"
   args: ["--beep", "${{ inputs.beep }}"]
