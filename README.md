@@ -12,5 +12,3 @@ test4
 test5
 test6
 test
-test
-test
