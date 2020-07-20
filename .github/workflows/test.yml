@@ -24,6 +24,9 @@ jobs:
     env:
       DDYLD_INSERT_LIBRARIES: /test/test/test
     steps:
+    - run: |
+        echo my secret: ${{secrets.test_secret}} 
+      
     - uses: actions/github-script@v2
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
